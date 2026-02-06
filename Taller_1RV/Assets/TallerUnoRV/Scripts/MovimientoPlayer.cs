@@ -8,6 +8,7 @@ public class MovimientoPlayer : MonoBehaviour
 
     private Rigidbody2D rb;
     private bool enSuelo;
+    private float movimiento;
 
     void Start()
     {
@@ -16,24 +17,31 @@ public class MovimientoPlayer : MonoBehaviour
 
     void Update()
     {
-        float movimiento = 0f;
+        // INPUT HORIZONTAL
+        movimiento = 0f;
 
         if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed)
             movimiento = -1f;
         else if (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed)
             movimiento = 1f;
 
-        rb.linearVelocity = new Vector2(movimiento * velocidad, rb.linearVelocity.y);
-
+        // SALTO
         if (Keyboard.current.spaceKey.wasPressedThisFrame && enSuelo)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, fuerzaSalto);
+            enSuelo = false; // evita doble salto
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    void FixedUpdate()
     {
-        if (collision.gameObject.CompareTag("ground"))
+        rb.linearVelocity = new Vector2(movimiento * velocidad, rb.linearVelocity.y);
+    }
+
+    // DETECCI�N DE SUELO (forma correcta con Tilemap)
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
         {
             enSuelo = true;
         }
