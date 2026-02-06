@@ -38,7 +38,6 @@ public class MovimientoPlayer : MonoBehaviour
         rb.linearVelocity = new Vector2(movimiento * velocidad, rb.linearVelocity.y);
     }
 
-    // DETECCI�N DE SUELO (forma correcta con Tilemap)
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
