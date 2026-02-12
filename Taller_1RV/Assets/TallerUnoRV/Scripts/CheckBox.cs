@@ -19,7 +19,7 @@ public class CheckBox : MonoBehaviour
             Debug.Log("GGs ni tan mal");
             terminado = true;
             PanelFin.SetActive(true);
-            Time.timeScale = 0f;
+            
         }
     }
 }
