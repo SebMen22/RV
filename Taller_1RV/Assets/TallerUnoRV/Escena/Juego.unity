@@ -41082,7 +41082,7 @@ GameObject:
   - component: {fileID: 989098582}
   - component: {fileID: 989098583}
   m_Layer: 0
-  m_Name: Goku
+  m_Name: Goku(Player)
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
