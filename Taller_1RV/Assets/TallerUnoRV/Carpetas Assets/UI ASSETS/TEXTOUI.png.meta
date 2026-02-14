@@ -1,0 +1,1625 @@
+fileFormatVersion: 2
+guid: 3e5c85ae11491f04fa7453cd0e810e81
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2310838989837335346
+    second: TEXTOUI_0
+  - first:
+      213: -1674935932006972911
+    second: TEXTOUI_1
+  - first:
+      213: -1755435861003733288
+    second: TEXTOUI_2
+  - first:
+      213: -5386722414508936200
+    second: TEXTOUI_3
+  - first:
+      213: -8357179237095394828
+    second: TEXTOUI_4
+  - first:
+      213: -1642124009020559098
+    second: TEXTOUI_5
+  - first:
+      213: 6408073147199805720
+    second: TEXTOUI_6
+  - first:
+      213: -3809617379477182623
+    second: TEXTOUI_7
+  - first:
+      213: -7978550482742783446
+    second: TEXTOUI_8
+  - first:
+      213: 6629515729743617233
+    second: TEXTOUI_9
+  - first:
+      213: -1232628201965581217
+    second: TEXTOUI_10
+  - first:
+      213: -2591091982333422471
+    second: TEXTOUI_11
+  - first:
+      213: 4752153199759033751
+    second: TEXTOUI_12
+  - first:
+      213: -5416905403692609479
+    second: TEXTOUI_13
+  - first:
+      213: 4636374460617379674
+    second: TEXTOUI_14
+  - first:
+      213: 1400850448461963543
+    second: TEXTOUI_15
+  - first:
+      213: -478207618207937062
+    second: TEXTOUI_16
+  - first:
+      213: -237459711787846526
+    second: TEXTOUI_17
+  - first:
+      213: -8255160811154054868
+    second: TEXTOUI_18
+  - first:
+      213: -5129312106135303066
+    second: TEXTOUI_19
+  - first:
+      213: -376966800447633914
+    second: TEXTOUI_20
+  - first:
+      213: 9082642148636593277
+    second: TEXTOUI_21
+  - first:
+      213: -2413901600763582956
+    second: TEXTOUI_22
+  - first:
+      213: -2780553299424818527
+    second: TEXTOUI_23
+  - first:
+      213: -4705672065676250364
+    second: TEXTOUI_24
+  - first:
+      213: -4368309729755875374
+    second: TEXTOUI_25
+  - first:
+      213: 6341641462702124395
+    second: TEXTOUI_26
+  - first:
+      213: -2511882484607058216
+    second: TEXTOUI_27
+  - first:
+      213: 1765111538129141095
+    second: TEXTOUI_28
+  - first:
+      213: 1495946463875930369
+    second: TEXTOUI_29
+  - first:
+      213: -34903078923293606
+    second: TEXTOUI_30
+  - first:
+      213: 3112328783877049991
+    second: TEXTOUI_31
+  - first:
+      213: 234251502351486615
+    second: TEXTOUI_32
+  - first:
+      213: 6918944207477535662
+    second: TEXTOUI_33
+  - first:
+      213: 3849909426951395684
+    second: TEXTOUI_34
+  - first:
+      213: 7476455577596895179
+    second: TEXTOUI_35
+  - first:
+      213: -9080128683219298074
+    second: TEXTOUI_36
+  - first:
+      213: -2399142591647046032
+    second: TEXTOUI_37
+  - first:
+      213: -5938650564221499070
+    second: TEXTOUI_38
+  - first:
+      213: 5095097369074531230
+    second: TEXTOUI_39
+  - first:
+      213: -5759694121779299981
+    second: TEXTOUI_40
+  - first:
+      213: 4857157311290828692
+    second: TEXTOUI_41
+  - first:
+      213: -4525860159036392805
+    second: TEXTOUI_42
+  - first:
+      213: -856067462718921102
+    second: TEXTOUI_43
+  - first:
+      213: -7616214103959476525
+    second: TEXTOUI_44
+  - first:
+      213: 3461482595418181846
+    second: TEXTOUI_45
+  - first:
+      213: 2444376077249583038
+    second: TEXTOUI_46
+  - first:
+      213: 7279536149084224201
+    second: TEXTOUI_47
+  - first:
+      213: 78179342631099045
+    second: TEXTOUI_48
+  - first:
+      213: -3672610846125888318
+    second: TEXTOUI_49
+  - first:
+      213: -607054599873318421
+    second: TEXTOUI_50
+  - first:
+      213: 2595023759480856254
+    second: TEXTOUI_51
+  - first:
+      213: -3287669651101208423
+    second: TEXTOUI_52
+  - first:
+      213: 1090355791287700281
+    second: TEXTOUI_53
+  - first:
+      213: 5732540686038115343
+    second: TEXTOUI_54
+  - first:
+      213: 160223819318362228
+    second: TEXTOUI_55
+  - first:
+      213: 4063736240448727721
+    second: TEXTOUI_56
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TEXTOUI_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 1524
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec48f9d9e204eefd0800000000000000
+      internalID: -2310838989837335346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_1
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 864
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 112cf2fd4ae61c8e0800000000000000
+      internalID: -1674935932006972911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_2
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 814
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d6f3e6926073a7e0800000000000000
+      internalID: -1755435861003733288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_3
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 807
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f37f8b01848e35b0800000000000000
+      internalID: -5386722414508936200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_4
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 768
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f1b8a813c5550c80800000000000000
+      internalID: -8357179237095394828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_5
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 759
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60170350ae00639e0800000000000000
+      internalID: -1642124009020559098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_6
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 742
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8195091739c0ee850800000000000000
+      internalID: 6408073147199805720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_7
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 734
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 167ab167d25812bc0800000000000000
+      internalID: -3809617379477182623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_8
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 719
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a22589dab9e764190800000000000000
+      internalID: -7978550482742783446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_9
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 710
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dc9b387e65c00c50800000000000000
+      internalID: 6629515729743617233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_10
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 696
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5c86b95e23d4eee0800000000000000
+      internalID: -1232628201965581217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_11
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 668
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97457acf1979a0cd0800000000000000
+      internalID: -2591091982333422471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_12
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 660
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7958fdd382a03f140800000000000000
+      internalID: 4752153199759033751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_13
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 627
+        width: 8
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 930120f3c3943d4b0800000000000000
+      internalID: -5416905403692609479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_14
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 620
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5fcac2e106b75040800000000000000
+      internalID: 4636374460617379674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_15
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 614
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 711a5049f02d07310800000000000000
+      internalID: 1400850448461963543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_16
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 606
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: add84d374b01d59f0800000000000000
+      internalID: -478207618207937062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_17
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 600
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2843b6676af54bcf0800000000000000
+      internalID: -237459711787846526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_18
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 596
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c21ef6fdaf6cf6d80800000000000000
+      internalID: -8255160811154054868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_19
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 580
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66cc1b3d0d501d8b0800000000000000
+      internalID: -5129312106135303066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_20
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 571
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 606043731beb4caf0800000000000000
+      internalID: -376966800447633914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_21
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 532
+        width: 8
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7c897b89e60c0e70800000000000000
+      internalID: 9082642148636593277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_22
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 524
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4166db39849108ed0800000000000000
+      internalID: -2413901600763582956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_23
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 516
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aa4eb4918d7969d0800000000000000
+      internalID: -2780553299424818527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_24
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 510
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40373ef103812beb0800000000000000
+      internalID: -4705672065676250364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_25
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 500
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d7b401f175a063c0800000000000000
+      internalID: -4368309729755875374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_26
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 492
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6daf359f49020850800000000000000
+      internalID: 6341641462702124395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_27
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 484
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8de78735030042dd0800000000000000
+      internalID: -2511882484607058216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_28
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 475
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76d712b879fee7810800000000000000
+      internalID: 1765111538129141095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_29
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 421
+        width: 10
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 109935e026ba2c410800000000000000
+      internalID: 1495946463875930369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_30
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 468
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5ca53ba5dff38ff0800000000000000
+      internalID: -34903078923293606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_31
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 388
+        width: 9
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78e07330a86313b20800000000000000
+      internalID: 3112328783877049991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_32
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 364
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79e03c1108a304300800000000000000
+      internalID: 234251502351486615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_33
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 356
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea3f17b3917050060800000000000000
+      internalID: 6918944207477535662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_34
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 350
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4699dd2e930ad6530800000000000000
+      internalID: 3849909426951395684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_35
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 324
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcf96a16cb4b1c760800000000000000
+      internalID: 7476455577596895179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_36
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 332
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e8d0e93217ecf180800000000000000
+      internalID: -9080128683219298074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_37
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 310
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0762e5b268884bed0800000000000000
+      internalID: -2399142591647046032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_38
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 280
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2498762b6cca59da0800000000000000
+      internalID: -5938650564221499070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_39
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 272
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9bf6bbef0c65b640800000000000000
+      internalID: 5095097369074531230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_40
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 281
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 379707066b47110b0800000000000000
+      internalID: -5759694121779299981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_41
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 264
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4976ead17d6186340800000000000000
+      internalID: 4857157311290828692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_42
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 231
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9afa851a2ae031c0800000000000000
+      internalID: -4525860159036392805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_43
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 216
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2766ed4ad23ae14f0800000000000000
+      internalID: -856067462718921102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_44
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 200
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d6ec28ff95cd4690800000000000000
+      internalID: -7616214103959476525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_45
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 192
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d01910b418a90030800000000000000
+      internalID: 3461482595418181846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_46
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 183
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb79ce5671b2ce120800000000000000
+      internalID: 2444376077249583038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_47
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 184
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cab7c71f8b160560800000000000000
+      internalID: 7279536149084224201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_48
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 168
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aadc4aa2bfb51100800000000000000
+      internalID: 78179342631099045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_49
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 168
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cc6b6ec4e3480dc0800000000000000
+      internalID: -3672610846125888318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_50
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 142
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be1b847ce0f4397f0800000000000000
+      internalID: -607054599873318421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_51
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 139
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebe1e873c50630420800000000000000
+      internalID: 2595023759480856254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_52
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 104
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 990b7430fd9df52d0800000000000000
+      internalID: -3287669651101208423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_53
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 86
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93b4e72b0d8b12f00800000000000000
+      internalID: 1090355791287700281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_54
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 95
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f04a6c3b1631e8f40800000000000000
+      internalID: 5732540686038115343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_55
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 54
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 470070bf6ba393200800000000000000
+      internalID: 160223819318362228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEXTOUI_56
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 0
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aae3d0849a456830800000000000000
+      internalID: 4063736240448727721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TEXTOUI_0: -2310838989837335346
+      TEXTOUI_1: -1674935932006972911
+      TEXTOUI_10: -1232628201965581217
+      TEXTOUI_11: -2591091982333422471
+      TEXTOUI_12: 4752153199759033751
+      TEXTOUI_13: -5416905403692609479
+      TEXTOUI_14: 4636374460617379674
+      TEXTOUI_15: 1400850448461963543
+      TEXTOUI_16: -478207618207937062
+      TEXTOUI_17: -237459711787846526
+      TEXTOUI_18: -8255160811154054868
+      TEXTOUI_19: -5129312106135303066
+      TEXTOUI_2: -1755435861003733288
+      TEXTOUI_20: -376966800447633914
+      TEXTOUI_21: 9082642148636593277
+      TEXTOUI_22: -2413901600763582956
+      TEXTOUI_23: -2780553299424818527
+      TEXTOUI_24: -4705672065676250364
+      TEXTOUI_25: -4368309729755875374
+      TEXTOUI_26: 6341641462702124395
+      TEXTOUI_27: -2511882484607058216
+      TEXTOUI_28: 1765111538129141095
+      TEXTOUI_29: 1495946463875930369
+      TEXTOUI_3: -5386722414508936200
+      TEXTOUI_30: -34903078923293606
+      TEXTOUI_31: 3112328783877049991
+      TEXTOUI_32: 234251502351486615
+      TEXTOUI_33: 6918944207477535662
+      TEXTOUI_34: 3849909426951395684
+      TEXTOUI_35: 7476455577596895179
+      TEXTOUI_36: -9080128683219298074
+      TEXTOUI_37: -2399142591647046032
+      TEXTOUI_38: -5938650564221499070
+      TEXTOUI_39: 5095097369074531230
+      TEXTOUI_4: -8357179237095394828
+      TEXTOUI_40: -5759694121779299981
+      TEXTOUI_41: 4857157311290828692
+      TEXTOUI_42: -4525860159036392805
+      TEXTOUI_43: -856067462718921102
+      TEXTOUI_44: -7616214103959476525
+      TEXTOUI_45: 3461482595418181846
+      TEXTOUI_46: 2444376077249583038
+      TEXTOUI_47: 7279536149084224201
+      TEXTOUI_48: 78179342631099045
+      TEXTOUI_49: -3672610846125888318
+      TEXTOUI_5: -1642124009020559098
+      TEXTOUI_50: -607054599873318421
+      TEXTOUI_51: 2595023759480856254
+      TEXTOUI_52: -3287669651101208423
+      TEXTOUI_53: 1090355791287700281
+      TEXTOUI_54: 5732540686038115343
+      TEXTOUI_55: 160223819318362228
+      TEXTOUI_56: 4063736240448727721
+      TEXTOUI_6: 6408073147199805720
+      TEXTOUI_7: -3809617379477182623
+      TEXTOUI_8: -7978550482742783446
+      TEXTOUI_9: 6629515729743617233
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

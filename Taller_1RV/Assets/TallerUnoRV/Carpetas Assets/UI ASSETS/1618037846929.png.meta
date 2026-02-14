@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8a7b0bf57dc27714286f87c717854915
+guid: 0e891702a41f84e499b90eb45c28e2b8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5081040164449767308
-    second: 1483290521635_0
+      213: 7219037679463220275
+    second: 1618037846929_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,17 +109,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1483290521635_0
+      name: 1618037846929_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 19
-        width: 153
-        height: 326
+        x: 20
+        y: 11
+        width: 272
+        height: 448
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c8f458beb1b738640800000000000000
-      internalID: 5081040164449767308
+      spriteID: 334c098758c2f2460800000000000000
+      internalID: 7219037679463220275
       vertices: []
       indices: 
       edges: []
@@ -138,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 6a50d7beaa8124d46ac012a7fe507423
+    spriteID: e7e89c1555845da40966c52f51702c63
     internalID: 0
     vertices: []
     indices: 
@@ -150,7 +163,7 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      1483290521635_0: 5081040164449767308
+      1618037846929_0: 7219037679463220275
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

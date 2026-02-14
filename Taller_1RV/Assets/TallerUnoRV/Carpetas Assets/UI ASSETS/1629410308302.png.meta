@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8049b6029523d8d4584d6488dbe5e1d1
+guid: e640f9e88d53e974681994c0304228c7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3724758957765060427
-    second: UIPRESIONAE_0
+      213: -9037310390517541522
+    second: 1629410308302_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,27 +109,40 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UIPRESIONAE_0
+      name: 1629410308302_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 569
-        height: 98
+        x: 15
+        y: 6
+        width: 218
+        height: 414
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b476a87998001b330800000000000000
-      internalID: 3724758957765060427
+      spriteID: e655140e416059280800000000000000
+      internalID: -9037310390517541522
       vertices: []
       indices: 
       edges: []
@@ -138,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d72033ff96e8baf449f1af01160408cd
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -146,11 +159,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      UIPRESIONAE_0: 3724758957765060427
+      1629410308302_0: -9037310390517541522
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
