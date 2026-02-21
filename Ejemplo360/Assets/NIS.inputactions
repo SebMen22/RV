@@ -1,0 +1,69 @@
+{
+    "version": 1,
+    "name": "NIS",
+    "maps": [
+        {
+            "name": "View",
+            "id": "2c444c26-cf56-43e2-a48e-d3f49e9b20c2",
+            "actions": [
+                {
+                    "name": "Look",
+                    "type": "Value",
+                    "id": "e7e31e4b-9713-4d97-9447-b468bdd94a08",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c2e5eb8f-7f89-441c-935e-c034e1bc6e5d",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Control",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9038c7ce-a16d-4951-ae3a-84d156b92123",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Mouse",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Control",
+            "bindingGroup": "Control",
+            "devices": [
+                {
+                    "devicePath": "<Gamepad>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Mouse",
+            "bindingGroup": "Mouse",
+            "devices": [
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
