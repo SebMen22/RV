@@ -89,13 +89,171 @@ public partial class @NIS: IInputActionCollection2, IDisposable
     ""name"": ""NIS"",
     ""maps"": [
         {
+            ""name"": ""PlayerMove"",
+            ""id"": ""1a868bc6-aa79-4dec-a164-af054523a6aa"",
+            ""actions"": [
+                {
+                    ""name"": ""Caminar"",
+                    ""type"": ""Value"",
+                    ""id"": ""7418def8-a597-4b70-897a-18f5c839893e"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Jump"",
+                    ""type"": ""Value"",
+                    ""id"": ""aacc605a-75ad-4aa5-94b9-e6d769180f29"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": ""WASD"",
+                    ""id"": ""be03cd1b-4db2-449b-99f6-f7a134e2c0a9"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Caminar"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""78ed5467-0d4f-4a99-8304-fba2d6db7fd2"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Teclado"",
+                    ""action"": ""Caminar"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""1cd5a222-3dc6-42c5-b734-2fa8e0de9f09"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Teclado"",
+                    ""action"": ""Caminar"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""6f355f82-48b0-4ae3-bb08-527684258c5d"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Teclado"",
+                    ""action"": ""Caminar"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""4b5c3a1d-f248-4f79-a19c-ddf97017798b"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Teclado"",
+                    ""action"": ""Caminar"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""FLECHAS"",
+                    ""id"": ""844bb1c9-76a9-4b25-9802-5b0365c8eb75"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Caminar"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""217a9c8b-98b3-4483-932f-e0192fe47f7e"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Teclado"",
+                    ""action"": ""Caminar"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""9f6e85ab-0171-4431-b2f8-dbeba5ad8d2e"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Teclado"",
+                    ""action"": ""Caminar"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""ff99c32c-e61c-4949-90ed-c4f1e843c8f3"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Teclado"",
+                    ""action"": ""Caminar"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""8e59fe53-9981-4b4d-b243-6528a749f9db"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Teclado"",
+                    ""action"": ""Caminar"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""509a7c19-76a8-4cb2-93be-37154dce7aea"",
+                    ""path"": ""<Gamepad>/leftStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""Caminar"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f4af0fe3-86d4-4efb-92e8-6928fc130d6e"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Teclado"",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
             ""name"": ""View"",
-            ""id"": ""2c444c26-cf56-43e2-a48e-d3f49e9b20c2"",
+            ""id"": ""49f595b0-c327-429c-bc24-98fffdecdfae"",
             ""actions"": [
                 {
                     ""name"": ""Look"",
                     ""type"": ""Value"",
-                    ""id"": ""e7e31e4b-9713-4d97-9447-b468bdd94a08"",
+                    ""id"": ""2717765e-766e-4278-826c-7333059aee44"",
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -105,22 +263,22 @@ public partial class @NIS: IInputActionCollection2, IDisposable
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""c2e5eb8f-7f89-441c-935e-c034e1bc6e5d"",
-                    ""path"": ""<Gamepad>/rightStick"",
+                    ""id"": ""8a004843-0f99-48ae-aafe-8fd4c43866ee"",
+                    ""path"": ""<Mouse>/scroll"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": "";Control"",
+                    ""groups"": "";Mouse"",
                     ""action"": ""Look"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""9038c7ce-a16d-4951-ae3a-84d156b92123"",
-                    ""path"": ""<Mouse>/delta"",
+                    ""id"": ""bc5845ec-613d-4f23-9a87-49d086a2d5e9"",
+                    ""path"": ""<Gamepad>/rightStick"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": "";Mouse"",
+                    ""groups"": "";Gamepad"",
                     ""action"": ""Look"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -130,8 +288,19 @@ public partial class @NIS: IInputActionCollection2, IDisposable
     ],
     ""controlSchemes"": [
         {
-            ""name"": ""Control"",
-            ""bindingGroup"": ""Control"",
+            ""name"": ""Teclado"",
+            ""bindingGroup"": ""Teclado"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Keyboard>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""Gamepad"",
+            ""bindingGroup"": ""Gamepad"",
             ""devices"": [
                 {
                     ""devicePath"": ""<Gamepad>"",
@@ -153,6 +322,10 @@ public partial class @NIS: IInputActionCollection2, IDisposable
         }
     ]
 }");
+        // PlayerMove
+        m_PlayerMove = asset.FindActionMap("PlayerMove", throwIfNotFound: true);
+        m_PlayerMove_Caminar = m_PlayerMove.FindAction("Caminar", throwIfNotFound: true);
+        m_PlayerMove_Jump = m_PlayerMove.FindAction("Jump", throwIfNotFound: true);
         // View
         m_View = asset.FindActionMap("View", throwIfNotFound: true);
         m_View_Look = m_View.FindAction("Look", throwIfNotFound: true);
@@ -160,6 +333,7 @@ public partial class @NIS: IInputActionCollection2, IDisposable
 
     ~@NIS()
     {
+        UnityEngine.Debug.Assert(!m_PlayerMove.enabled, "This will cause a leak and performance issues, NIS.PlayerMove.Disable() has not been called.");
         UnityEngine.Debug.Assert(!m_View.enabled, "This will cause a leak and performance issues, NIS.View.Disable() has not been called.");
     }
 
@@ -232,6 +406,113 @@ public partial class @NIS: IInputActionCollection2, IDisposable
     {
         return asset.FindBinding(bindingMask, out action);
     }
+
+    // PlayerMove
+    private readonly InputActionMap m_PlayerMove;
+    private List<IPlayerMoveActions> m_PlayerMoveActionsCallbackInterfaces = new List<IPlayerMoveActions>();
+    private readonly InputAction m_PlayerMove_Caminar;
+    private readonly InputAction m_PlayerMove_Jump;
+    /// <summary>
+    /// Provides access to input actions defined in input action map "PlayerMove".
+    /// </summary>
+    public struct PlayerMoveActions
+    {
+        private @NIS m_Wrapper;
+
+        /// <summary>
+        /// Construct a new instance of the input action map wrapper class.
+        /// </summary>
+        public PlayerMoveActions(@NIS wrapper) { m_Wrapper = wrapper; }
+        /// <summary>
+        /// Provides access to the underlying input action "PlayerMove/Caminar".
+        /// </summary>
+        public InputAction @Caminar => m_Wrapper.m_PlayerMove_Caminar;
+        /// <summary>
+        /// Provides access to the underlying input action "PlayerMove/Jump".
+        /// </summary>
+        public InputAction @Jump => m_Wrapper.m_PlayerMove_Jump;
+        /// <summary>
+        /// Provides access to the underlying input action map instance.
+        /// </summary>
+        public InputActionMap Get() { return m_Wrapper.m_PlayerMove; }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Enable()" />
+        public void Enable() { Get().Enable(); }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Disable()" />
+        public void Disable() { Get().Disable(); }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.enabled" />
+        public bool enabled => Get().enabled;
+        /// <summary>
+        /// Implicitly converts an <see ref="PlayerMoveActions" /> to an <see ref="InputActionMap" /> instance.
+        /// </summary>
+        public static implicit operator InputActionMap(PlayerMoveActions set) { return set.Get(); }
+        /// <summary>
+        /// Adds <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
+        /// </summary>
+        /// <param name="instance">Callback instance.</param>
+        /// <remarks>
+        /// If <paramref name="instance" /> is <c>null</c> or <paramref name="instance"/> have already been added this method does nothing.
+        /// </remarks>
+        /// <seealso cref="PlayerMoveActions" />
+        public void AddCallbacks(IPlayerMoveActions instance)
+        {
+            if (instance == null || m_Wrapper.m_PlayerMoveActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_PlayerMoveActionsCallbackInterfaces.Add(instance);
+            @Caminar.started += instance.OnCaminar;
+            @Caminar.performed += instance.OnCaminar;
+            @Caminar.canceled += instance.OnCaminar;
+            @Jump.started += instance.OnJump;
+            @Jump.performed += instance.OnJump;
+            @Jump.canceled += instance.OnJump;
+        }
+
+        /// <summary>
+        /// Removes <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
+        /// </summary>
+        /// <remarks>
+        /// Calling this method when <paramref name="instance" /> have not previously been registered has no side-effects.
+        /// </remarks>
+        /// <seealso cref="PlayerMoveActions" />
+        private void UnregisterCallbacks(IPlayerMoveActions instance)
+        {
+            @Caminar.started -= instance.OnCaminar;
+            @Caminar.performed -= instance.OnCaminar;
+            @Caminar.canceled -= instance.OnCaminar;
+            @Jump.started -= instance.OnJump;
+            @Jump.performed -= instance.OnJump;
+            @Jump.canceled -= instance.OnJump;
+        }
+
+        /// <summary>
+        /// Unregisters <param cref="instance" /> and unregisters all input action callbacks via <see cref="PlayerMoveActions.UnregisterCallbacks(IPlayerMoveActions)" />.
+        /// </summary>
+        /// <seealso cref="PlayerMoveActions.UnregisterCallbacks(IPlayerMoveActions)" />
+        public void RemoveCallbacks(IPlayerMoveActions instance)
+        {
+            if (m_Wrapper.m_PlayerMoveActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        /// <summary>
+        /// Replaces all existing callback instances and previously registered input action callbacks associated with them with callbacks provided via <param cref="instance" />.
+        /// </summary>
+        /// <remarks>
+        /// If <paramref name="instance" /> is <c>null</c>, calling this method will only unregister all existing callbacks but not register any new callbacks.
+        /// </remarks>
+        /// <seealso cref="PlayerMoveActions.AddCallbacks(IPlayerMoveActions)" />
+        /// <seealso cref="PlayerMoveActions.RemoveCallbacks(IPlayerMoveActions)" />
+        /// <seealso cref="PlayerMoveActions.UnregisterCallbacks(IPlayerMoveActions)" />
+        public void SetCallbacks(IPlayerMoveActions instance)
+        {
+            foreach (var item in m_Wrapper.m_PlayerMoveActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_PlayerMoveActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    /// <summary>
+    /// Provides a new <see cref="PlayerMoveActions" /> instance referencing this action map.
+    /// </summary>
+    public PlayerMoveActions @PlayerMove => new PlayerMoveActions(this);
 
     // View
     private readonly InputActionMap m_View;
@@ -328,17 +609,30 @@ public partial class @NIS: IInputActionCollection2, IDisposable
     /// Provides a new <see cref="ViewActions" /> instance referencing this action map.
     /// </summary>
     public ViewActions @View => new ViewActions(this);
-    private int m_ControlSchemeIndex = -1;
+    private int m_TecladoSchemeIndex = -1;
     /// <summary>
     /// Provides access to the input control scheme.
     /// </summary>
     /// <seealso cref="UnityEngine.InputSystem.InputControlScheme" />
-    public InputControlScheme ControlScheme
+    public InputControlScheme TecladoScheme
     {
         get
         {
-            if (m_ControlSchemeIndex == -1) m_ControlSchemeIndex = asset.FindControlSchemeIndex("Control");
-            return asset.controlSchemes[m_ControlSchemeIndex];
+            if (m_TecladoSchemeIndex == -1) m_TecladoSchemeIndex = asset.FindControlSchemeIndex("Teclado");
+            return asset.controlSchemes[m_TecladoSchemeIndex];
+        }
+    }
+    private int m_GamepadSchemeIndex = -1;
+    /// <summary>
+    /// Provides access to the input control scheme.
+    /// </summary>
+    /// <seealso cref="UnityEngine.InputSystem.InputControlScheme" />
+    public InputControlScheme GamepadScheme
+    {
+        get
+        {
+            if (m_GamepadSchemeIndex == -1) m_GamepadSchemeIndex = asset.FindControlSchemeIndex("Gamepad");
+            return asset.controlSchemes[m_GamepadSchemeIndex];
         }
     }
     private int m_MouseSchemeIndex = -1;
@@ -353,6 +647,28 @@ public partial class @NIS: IInputActionCollection2, IDisposable
             if (m_MouseSchemeIndex == -1) m_MouseSchemeIndex = asset.FindControlSchemeIndex("Mouse");
             return asset.controlSchemes[m_MouseSchemeIndex];
         }
+    }
+    /// <summary>
+    /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "PlayerMove" which allows adding and removing callbacks.
+    /// </summary>
+    /// <seealso cref="PlayerMoveActions.AddCallbacks(IPlayerMoveActions)" />
+    /// <seealso cref="PlayerMoveActions.RemoveCallbacks(IPlayerMoveActions)" />
+    public interface IPlayerMoveActions
+    {
+        /// <summary>
+        /// Method invoked when associated input action "Caminar" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnCaminar(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Jump" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnJump(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "View" which allows adding and removing callbacks.
