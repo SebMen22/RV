@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class MovimientoPlayer : MonoBehaviour
@@ -10,14 +10,19 @@ public class MovimientoPlayer : MonoBehaviour
     private bool enSuelo;
     private float movimiento;
 
+   
+    private AudioSource audioPasos;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+ 
+        audioPasos = GetComponent<AudioSource>();
     }
 
     void Update()
     {
-        
         movimiento = 0f;
 
         if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed)
@@ -25,11 +30,21 @@ public class MovimientoPlayer : MonoBehaviour
         else if (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed)
             movimiento = 1f;
 
-        
         if (Keyboard.current.spaceKey.wasPressedThisFrame && enSuelo)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, salto);
-            
+        }
+
+        // 🔊 NUEVO — CONTROLAR SONIDO DE PASOS
+        if (Mathf.Abs(rb.linearVelocity.x) > 0.1f && enSuelo)
+        {
+            if (!audioPasos.isPlaying)
+                audioPasos.Play();
+        }
+        else
+        {
+            if (audioPasos.isPlaying)
+                audioPasos.Stop();
         }
     }
 
