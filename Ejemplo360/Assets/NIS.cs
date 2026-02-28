@@ -258,13 +258,22 @@ public partial class @NIS: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Click"",
+                    ""type"": ""Button"",
+                    ""id"": ""00d1cf90-11a8-4003-aa90-5a3c40f05454"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
                 {
                     ""name"": """",
                     ""id"": ""8a004843-0f99-48ae-aafe-8fd4c43866ee"",
-                    ""path"": ""<Mouse>/scroll"",
+                    ""path"": ""<Mouse>/delta"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Mouse"",
@@ -280,6 +289,28 @@ public partial class @NIS: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": "";Gamepad"",
                     ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d13bc94d-f52c-40f7-b801-79278da1b8b5"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Mouse"",
+                    ""action"": ""Click"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c260f807-e943-4ded-ac6b-27b6e1ed0856"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Mouse"",
+                    ""action"": ""Click"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -329,6 +360,7 @@ public partial class @NIS: IInputActionCollection2, IDisposable
         // View
         m_View = asset.FindActionMap("View", throwIfNotFound: true);
         m_View_Look = m_View.FindAction("Look", throwIfNotFound: true);
+        m_View_Click = m_View.FindAction("Click", throwIfNotFound: true);
     }
 
     ~@NIS()
@@ -518,6 +550,7 @@ public partial class @NIS: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_View;
     private List<IViewActions> m_ViewActionsCallbackInterfaces = new List<IViewActions>();
     private readonly InputAction m_View_Look;
+    private readonly InputAction m_View_Click;
     /// <summary>
     /// Provides access to input actions defined in input action map "View".
     /// </summary>
@@ -533,6 +566,10 @@ public partial class @NIS: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "View/Look".
         /// </summary>
         public InputAction @Look => m_Wrapper.m_View_Look;
+        /// <summary>
+        /// Provides access to the underlying input action "View/Click".
+        /// </summary>
+        public InputAction @Click => m_Wrapper.m_View_Click;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -562,6 +599,9 @@ public partial class @NIS: IInputActionCollection2, IDisposable
             @Look.started += instance.OnLook;
             @Look.performed += instance.OnLook;
             @Look.canceled += instance.OnLook;
+            @Click.started += instance.OnClick;
+            @Click.performed += instance.OnClick;
+            @Click.canceled += instance.OnClick;
         }
 
         /// <summary>
@@ -576,6 +616,9 @@ public partial class @NIS: IInputActionCollection2, IDisposable
             @Look.started -= instance.OnLook;
             @Look.performed -= instance.OnLook;
             @Look.canceled -= instance.OnLook;
+            @Click.started -= instance.OnClick;
+            @Click.performed -= instance.OnClick;
+            @Click.canceled -= instance.OnClick;
         }
 
         /// <summary>
@@ -684,5 +727,12 @@ public partial class @NIS: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnLook(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Click" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnClick(InputAction.CallbackContext context);
     }
 }
