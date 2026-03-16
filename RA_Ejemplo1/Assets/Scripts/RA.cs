@@ -10,7 +10,7 @@ public class RA : MonoBehaviour
 
     private Dictionary<string, GameObject> arModels = new Dictionary<string, GameObject>();
     private Dictionary<string, bool> modelState = new Dictionary<string, bool>();
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+   
     void Start()
     {
         foreach (var arModel in arModels2Place)
