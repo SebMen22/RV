@@ -1,5 +1,5 @@
-using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
@@ -8,79 +8,79 @@ public class RA : MonoBehaviour
     [SerializeField] private ARTrackedImageManager arTIM;
     [SerializeField] private GameObject[] arModels2Place;
 
-    private Dictionary<string, GameObject> arModels = new Dictionary<string, GameObject>();
-    private Dictionary<string, bool> modelState = new Dictionary<string, bool>();
-   
-    void Start()
-    {
-        foreach (var arModel in arModels2Place)
-        {
-            GameObject newARModel = Instantiate(arModel, Vector3.zero, Quaternion.identity);
-            newARModel.name = arModel.name;
+    private Dictionary<string, GameObject> spawnedModels = new();
+    private Dictionary<string, bool> modelState = new();
 
-            arModels.Add(arModel.name, newARModel);
-            newARModel.SetActive(false);
-            modelState.Add(arModel.name, false);
+    void Awake()
+    {
+        foreach (var prefab in arModels2Place)
+        {
+            GameObject obj = Instantiate(prefab, Vector3.zero, Quaternion.identity);
+            obj.name = prefab.name;
+            obj.SetActive(false);
+
+            spawnedModels.Add(prefab.name, obj);
+            modelState.Add(prefab.name, false);
         }
     }
 
     private void OnEnable()
     {
-        arTIM.trackedImagesChanged += ImageFound;
+        if (arTIM != null)
+            arTIM.trackedImagesChanged += OnTrackedImagesChanged;
     }
 
     private void OnDisable()
     {
-        arTIM.trackedImagesChanged -= ImageFound;
+        if (arTIM != null)
+            arTIM.trackedImagesChanged -= OnTrackedImagesChanged;
     }
 
-    private void ImageFound(ARTrackedImagesChangedEventArgs evenData)
+    private void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs args)
     {
-        foreach (var trackedImage in evenData.added)
-        {
-            showARModel(trackedImage);
-        }
+        foreach (var img in args.added)
+            UpdateImage(img);
 
-        foreach (var trackedImage in evenData.updated)
-        {
-            if (trackedImage.trackingState == TrackingState.Tracking)
-                showARModel(trackedImage);
-            else
-                hideARModel(trackedImage);
+        foreach (var img in args.updated)
+            UpdateImage(img);
 
-        }
+        foreach (var img in args.removed)
+            DisableModel(img);
     }
 
-    private void showARModel(ARTrackedImage trackedImage)
+    private void UpdateImage(ARTrackedImage trackedImage)
     {
-        bool isModelActive = modelState[trackedImage.referenceImage.name];
+        string name = trackedImage.referenceImage.name;
 
-        if (!isModelActive)
+        if (!spawnedModels.ContainsKey(name))
+            return;
+
+        var model = spawnedModels[name];
+
+        if (trackedImage.trackingState == TrackingState.Tracking)
         {
-            GameObject arModel = arModels[trackedImage.referenceImage.name];
-            arModel.transform.position = trackedImage.transform.position;
-
-            arModel.SetActive(true);
-            modelState[trackedImage.referenceImage.name] = true;
+            model.SetActive(true);
+            model.transform.SetPositionAndRotation(
+                trackedImage.transform.position,
+                trackedImage.transform.rotation
+            );
+            modelState[name] = true;
         }
         else
         {
-            GameObject arModel = arModels[trackedImage.referenceImage.name];
-            arModel.transform.position = trackedImage.transform.position;
+            model.SetActive(false);
+            modelState[name] = false;
         }
     }
 
-    private void hideARModel(ARTrackedImage trackedImage)
+    private void DisableModel(ARTrackedImage trackedImage)
     {
-        bool isModelActive = modelState[trackedImage.referenceImage.name];
+        string name = trackedImage.referenceImage.name;
 
-        if (isModelActive)
-        {
-            GameObject arModel = arModels[trackedImage.referenceImage.name];
-            arModel.SetActive(false);
-            modelState[trackedImage.referenceImage.name] = false;
-        }
+        if (!spawnedModels.ContainsKey(name))
+            return;
 
+        spawnedModels[name].SetActive(false);
+        modelState[name] = false;
     }
-
 }
