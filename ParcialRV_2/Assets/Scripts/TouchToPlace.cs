@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 using System.Collections.Generic;
@@ -13,27 +13,30 @@ public class TouchToPlace : MonoBehaviour
 
     void Update()
     {
-        // Detectar toque
+        // Si no hay toque → salir
         if (Input.touchCount == 0) return;
 
         Touch touch = Input.GetTouch(0);
 
-        // Solo en el primer toque
+        // Solo cuando empieza el toque
         if (touch.phase != TouchPhase.Began) return;
 
-        // Raycast contra planos detectados
-        if (raycastManager.Raycast(touch.position, hits, TrackableType.Planes))
+        // Raycast SOLO en planos reales
+        if (raycastManager.Raycast(touch.position, hits, TrackableType.PlaneWithinPolygon))
         {
             Pose pose = hits[0].pose;
 
-            // Si ya hay objeto, lo mueve
+            // Mantener el objeto recto en el suelo
+            Quaternion rotacion = Quaternion.Euler(0, pose.rotation.eulerAngles.y, 0);
+
+            // Instanciar o mover
             if (objetoInstanciado == null)
             {
-                objetoInstanciado = Instantiate(prefabObjeto, pose.position, pose.rotation);
+                objetoInstanciado = Instantiate(prefabObjeto, pose.position, rotacion);
             }
             else
             {
-                objetoInstanciado.transform.SetPositionAndRotation(pose.position, pose.rotation);
+                objetoInstanciado.transform.SetPositionAndRotation(pose.position, rotacion);
             }
         }
     }
