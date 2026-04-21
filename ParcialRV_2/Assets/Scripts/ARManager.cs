@@ -2,8 +2,8 @@
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 using UnityEngine.UI;
-using System.Collections.Generic;
 using System.Collections;
+using System.Collections.Generic;
 
 public class ARManager : MonoBehaviour
 {
@@ -23,9 +23,8 @@ public class ARManager : MonoBehaviour
     private bool placed = false;
 
     private GameObject spawnedObject;
-    private ARAnchor currentAnchor;
 
-    private float scaleAR = 0.02f;
+    public float scaleAR = 0.003f;
 
     void Start()
     {
@@ -44,12 +43,14 @@ public class ARManager : MonoBehaviour
 
         foreach (var plane in planeManager.trackables)
         {
-            if (plane.trackingState == TrackingState.Tracking)
+            // 🔥 SOLO PLANOS HORIZONTALES (SUELO)
+            if (plane.trackingState == TrackingState.Tracking &&
+                plane.alignment == PlaneAlignment.HorizontalUp)
             {
                 planeDetected = true;
                 startButton.interactable = true;
 
-                Debug.Log("PLANO DETECTADO");
+                Debug.Log("SUELO DETECTADO");
                 return;
             }
         }
@@ -61,9 +62,10 @@ public class ARManager : MonoBehaviour
 
         Vector2 center = new Vector2(Screen.width / 2, Screen.height / 2);
 
+        // 🔥 SOLO RAYCAST A PLANOS HORIZONTALES
         if (!raycastManager.Raycast(center, hits, TrackableType.PlaneWithinPolygon))
         {
-            Debug.Log("NO HAY PLANO EN CENTRO");
+            Debug.Log("NO HAY SUELO EN EL CENTRO");
             return;
         }
 
@@ -74,37 +76,32 @@ public class ARManager : MonoBehaviour
 
     IEnumerator SpawnStable(Pose pose)
     {
-        // ⏳ esperar estabilidad de tracking AR
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.2f);
 
-        // 🔵 CREAR ANCLA REAL
-        GameObject anchorGO = new GameObject("ARAnchor");
-        anchorGO.transform.SetPositionAndRotation(pose.position, pose.rotation);
+        // 📏 Separar un poco del usuario
+        pose.position += Camera.main.transform.forward * 0.3f;
 
-        currentAnchor = anchorGO.AddComponent<ARAnchor>();
+        // 🔒 Rotación fija (sin inclinaciones)
+        Quaternion fixedRotation = Quaternion.Euler(0, 0, 0);
 
-        if (currentAnchor == null)
-        {
-            Debug.LogError("ERROR CREANDO ANCLA");
-            yield break;
-        }
-
-        // 🚀 INSTANCIAR DEATH STAR
-        spawnedObject = Instantiate(deathStarPrefab, currentAnchor.transform);
-        spawnedObject.transform.localPosition = Vector3.zero;
-        spawnedObject.transform.localRotation = Quaternion.identity;
+        // 🚀 Instanciar en el mundo (NO como hijo)
+        spawnedObject = Instantiate(deathStarPrefab);
+        spawnedObject.transform.position = pose.position;
+        spawnedObject.transform.rotation = fixedRotation;
         spawnedObject.transform.localScale = Vector3.one * scaleAR;
 
-        // ❌ DETENER ESCANEO DE PLANOS
-        planeManager.enabled = false;
-
-        foreach (var plane in planeManager.trackables)
+        // 👁️ Ocultar planos
+        foreach (var p in planeManager.trackables)
         {
-            plane.gameObject.SetActive(false);
+            p.gameObject.SetActive(false);
         }
+
+        // 🛑 DETENER COMPLETAMENTE EL AR SCAN
+        planeManager.enabled = false;
+        raycastManager.enabled = false;
 
         placed = true;
 
-        Debug.Log("DEATH STAR FIJA Y ESTABLE");
+        Debug.Log("OBJETO FIJO EN SUELO");
     }
 }
