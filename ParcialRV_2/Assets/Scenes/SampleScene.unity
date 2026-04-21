@@ -646,7 +646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TouchToPlace
   raycastManager: {fileID: 1691788857}
-  prefabObjeto: {fileID: 3888562240504249050, guid: a74170d58f516f846a88204fb84abdb7, type: 3}
+  prefabObjeto: {fileID: 5750648432881157648, guid: 742c5dc52b390ec438f248c7391ba7f7, type: 3}
 --- !u!114 &1691788857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -662,7 +662,7 @@ MonoBehaviour:
   <trackablesChanged>k__BackingField:
     m_PersistentCalls:
       m_Calls: []
-  m_RaycastPrefab: {fileID: 0}
+  m_RaycastPrefab: {fileID: 4840342060949011618, guid: 4b0cd6afc6e6e41479b9914c5207eaef, type: 3}
 --- !u!114 &1691788858
 MonoBehaviour:
   m_ObjectHideFlags: 0
