@@ -3,25 +3,27 @@ using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using System.Collections;
 
 public class ARManager : MonoBehaviour
 {
-    [Header("AR SYSTEM")]
+    [Header("AR")]
     public ARRaycastManager raycastManager;
     public ARPlaneManager planeManager;
 
     [Header("UI")]
     public Button startButton;
 
-    [Header("PREFAB")]
+    [Header("Prefab")]
     public GameObject deathStarPrefab;
 
     private List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
     private bool planeDetected = false;
-    private bool objectPlaced = false;
+    private bool placed = false;
 
     private GameObject spawnedObject;
+    private ARAnchor currentAnchor;
 
     private float scaleAR = 0.02f;
 
@@ -36,7 +38,6 @@ public class ARManager : MonoBehaviour
         DetectPlanes();
     }
 
-    // 🔵 Detecta si ya hay planos en el mundo
     void DetectPlanes()
     {
         if (planeDetected) return;
@@ -48,60 +49,62 @@ public class ARManager : MonoBehaviour
                 planeDetected = true;
                 startButton.interactable = true;
 
-                Debug.Log("PLANO DETECTADO → BOTÓN ACTIVADO");
+                Debug.Log("PLANO DETECTADO");
                 return;
             }
         }
     }
 
-    // 🔴 Colocar objeto y fijarlo al mundo
     void PlaceObject()
     {
-        if (objectPlaced) return;
+        if (placed) return;
 
-        Vector2 screenCenter = new Vector2(Screen.width / 2, Screen.height / 2);
+        Vector2 center = new Vector2(Screen.width / 2, Screen.height / 2);
 
-        if (raycastManager.Raycast(screenCenter, hits, TrackableType.PlaneWithinPolygon))
+        if (!raycastManager.Raycast(center, hits, TrackableType.PlaneWithinPolygon))
         {
-            Pose hitPose = hits[0].pose;
-
-            // 🧠 CREAR ANCLA ESTABLE
-            GameObject anchorObject = new GameObject("ARAnchor");
-            anchorObject.transform.position = hitPose.position;
-            anchorObject.transform.rotation = hitPose.rotation;
-
-            ARAnchor anchor = anchorObject.AddComponent<ARAnchor>();
-
-            if (anchor == null)
-            {
-                Debug.LogError("ERROR CREANDO ANCLA");
-                return;
-            }
-
-            // 🚀 INSTANCIAR DEATH STAR COMO HIJA DEL ANCLA
-            spawnedObject = Instantiate(deathStarPrefab, anchor.transform);
-            spawnedObject.transform.localPosition = Vector3.zero;
-            spawnedObject.transform.localRotation = Quaternion.identity;
-
-            // 📏 ESCALA FINAL
-            spawnedObject.transform.localScale = Vector3.one * scaleAR;
-
-            // ❌ DETENER ESCANEO DE PLANOS
-            planeManager.enabled = false;
-
-            // ❌ OCULTAR PLANOS EXISTENTES
-            foreach (var plane in planeManager.trackables)
-            {
-                plane.gameObject.SetActive(false);
-            }
-
-            objectPlaced = true;
-
-            Debug.Log("DEATH STAR FIJA COLOCADA EN EL MUNDO");
+            Debug.Log("NO HAY PLANO EN CENTRO");
+            return;
         }
-        else
+
+        Pose pose = hits[0].pose;
+
+        StartCoroutine(SpawnStable(pose));
+    }
+
+    IEnumerator SpawnStable(Pose pose)
+    {
+        // ⏳ esperar estabilidad de tracking AR
+        yield return new WaitForSeconds(0.3f);
+
+        // 🔵 CREAR ANCLA REAL
+        GameObject anchorGO = new GameObject("ARAnchor");
+        anchorGO.transform.SetPositionAndRotation(pose.position, pose.rotation);
+
+        currentAnchor = anchorGO.AddComponent<ARAnchor>();
+
+        if (currentAnchor == null)
         {
-            Debug.Log("NO SE ENCONTRÓ PLANO PARA COLOCAR");
+            Debug.LogError("ERROR CREANDO ANCLA");
+            yield break;
         }
+
+        // 🚀 INSTANCIAR DEATH STAR
+        spawnedObject = Instantiate(deathStarPrefab, currentAnchor.transform);
+        spawnedObject.transform.localPosition = Vector3.zero;
+        spawnedObject.transform.localRotation = Quaternion.identity;
+        spawnedObject.transform.localScale = Vector3.one * scaleAR;
+
+        // ❌ DETENER ESCANEO DE PLANOS
+        planeManager.enabled = false;
+
+        foreach (var plane in planeManager.trackables)
+        {
+            plane.gameObject.SetActive(false);
+        }
+
+        placed = true;
+
+        Debug.Log("DEATH STAR FIJA Y ESTABLE");
     }
 }
